@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2C1B6A;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.carousel-inner img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.card-header {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.card {
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .card-header {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .col-4 {
+    display: block;
+    width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+}
